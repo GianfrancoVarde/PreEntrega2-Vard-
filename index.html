@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feng Suave PaginaOficial</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" > 
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" type="image/png" href="/Proyecto/img/OIP.jpeg" />
+</head>
+<body id="index">
+    <div id="grilla">
+        <audio src="Mp3/Feng_Suave_-_Sink_Into_The_Floor_Official_Audio.mp3" autoplay loop id="audio-fondo"></audio>
+        <header class="border">
+            <nav> <!-- EMPIEZA MENU-->
+                <ul>
+                  <li class="paginas">
+                      <a class="nav-link" href="index.html">INICIO</a>
+                  </li>
+                  <li class="paginas">
+                      <a class="nav-link" href="pages/conciertos.html">CONCIERTOS</a>
+                  </li>
+                  <li class="paginas">
+                      <a class="nav-link" href="https://open.spotify.com/artist/73dudJ9j0HStIhJDU8MjMI/discography/single">CANCIONES</a>
+                  </li>
+                  <li class="paginas">
+                      <a class="nav-link" href="">GALERIA</a>
+                  </li>
+                  <li class="paginas">
+                      <a class="nav-link" href="pages/contacto.html">CONTACTOS</a>
+                  </li>
+                </ul>
+              </nav><!-- TERMINA-->
+        </header>
+        <section id="productos" class="border">
+            <h2 class="descripcion">FENG SUEAVE</h2>
+            <p class="descripcion">Feng Suave es una banda de música indie originaria de Ámsterdam, Países Bajos. El grupo está compuesto por Daniël Schoemaker y Daniël de Jong, quienes se encargan de la composición, interpretación y producción de sus canciones. La banda se formó en 2017 y rápidamente ganó reconocimiento por su sonido distintivo y su enfoque introspectivo.
+
+                La música de Feng Suave se caracteriza por su suavidad y su estilo atmosférico, que combina elementos del pop psicodélico, el rock suave y el folk. Sus canciones suelen tener melodías dulces y armonías vocales envolventes, creando una sensación de calma y serenidad. Las letras de sus canciones abordan temas como el amor, la introspección y la nostalgia, transmitiendo emociones y pensamientos íntimos.
+                
+                Feng Suave ha lanzado varios sencillos y EPs a lo largo de su carrera, ganando elogios de la crítica y ganando una base de seguidores leales. Algunas de sus canciones más populares incluyen "Sink Into the Floor", "Honey, There's No Time", "Toking, Dozing" y "Venus Flytrap". La banda ha sido elogiada por su habilidad para crear una experiencia auditiva inmersiva, con su música evocando imágenes vívidas y una sensación de escapismo.
+                
+                En resumen, Feng Suave es una banda de música indie conocida por su sonido suave, atmosférico y melódico. Su enfoque introspectivo y letras emotivas los han convertido en una propuesta prometedora dentro de la escena musical contemporánea.</p>
+        </section>
+        <section id="servicios" class="border">Seccion de servicios
+            <img src="https://3voor12.vpro.nl/.imaging/mte/3v12/TABLET/dam/3voor12-lokaal-gelderland/gelderland/2018/juli/4daagse-2018/zaterdag/Feng-Suave/Feng-Suave5.jpg/jcr:content/Feng_Suave5.jpg"class="img-absolute img-absolute-right">
+            <h2 id="sink">Sink into the floor - By Feng Suave</h2>
+            <!-- comienza boton para cancion --> 
+            <div id="audio-player">
+                <audio src="Mp3/Feng_Suave_-_Sink_Into_The_Floor_Official_Audio.mp3" id="audio-fondo"></audio>
+                <button onclick="togglePlay()">▶︎</button>
+              </div>
+              <script>
+                function togglePlay() {
+                  var audio = document.getElementById('audio-fondo');
+                  if (audio.paused) {
+                    audio.play();
+                    document.getElementById('audio-button').textContent = "Pausar";
+                  } else {
+                    audio.pause();
+                    document.getElementById('audio-button').textContent = "Reproducir";
+                  }
+                }
+              </script>
+        <!-- termina boton para cancion --> 
+        </section>
+        
+        <aside class="border">
+            <img src="https://alttickets-9a2.kxcdn.com/static_alt_tickets/images/campaign/1170x375/feng_suave-5553480710.jpg" class="img-absolute img-absolute-left">
+        </aside>
+
+        <footer class="border">
+            <div class="iconos">
+               
+                <div class="redes">
+                  <a href="https://open.spotify.com/artist/73dudJ9j0HStIhJDU8MjMI?si=mhFzx_WrTo-jLWwk4NJGEg"><img src="img/spotify.png" alt="SPOTIFY"></a>
+                  <a href="https://www.youtube.com/channel/UCrYaDxvpuNkxKLLtOqvEvpA"><img src="img/youtube1.png" alt="YOUTUBE"></a>
+                  <a href="https://www.instagram.com/fengsuave/"><img src="img/instagram.png" alt="INSTAGRAM"></a>
+                </div>
+                <h6 id="copiright">Sin fines comerciales &copy; 2023 FENG SUAVE</h6>
+              </div>
+        </footer>
+    </div>
+   
+</body>
+</html>
